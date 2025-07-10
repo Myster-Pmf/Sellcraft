@@ -2,9 +2,7 @@
   "version": 2,
   "builds": [
     {
-      "src": "client/vite.config.ts",
-      "use": "@vercel/vite-react",
-      "config": { "includeFiles": ["../server/**"] }
+      "src": "client/vite.config.ts"
     },
     {
       "src": "server/index.js",
