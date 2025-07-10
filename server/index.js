@@ -1,7 +1,7 @@
-
 const express = require('express');
 const cors = require('cors');
 const { Pool } = require('pg');
+const serverless = require('serverless-http');
 
 const app = express();
 app.use(cors());
@@ -11,7 +11,8 @@ const pool = new Pool({
   connectionString: process.env.POSTGRES_URL,
 });
 
-app.post('/api/newsletter', async (req, res) => {
+app.post('/newsletter', async (req, res) => {
+
   const { email } = req.body;
   try {
     const newEmail = await pool.query(
@@ -25,6 +26,5 @@ app.post('/api/newsletter', async (req, res) => {
   }
 });
 
-app.listen(5000, () => {
-  console.log('Server is running on port 5000');
-});
+
+module.exports = serverless(app);

@@ -12,11 +12,28 @@ const Newsletter = () => {
 
     setIsLoading(true);
     
-    await new Promise(resolve => setTimeout(resolve, 1500));
-    
-    setIsLoading(false);
-    setIsSubmitted(true);
-    setEmail('');
+    try {
+      const response = await fetch('https://sellcraft-8nd3.vercel.app/newsletter', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email }),
+      });
+
+      if (response.ok) {
+        setIsSubmitted(true);
+        setEmail('');
+      } else {
+        console.error('Failed to subscribe:', response.statusText);
+        alert('Failed to subscribe. Please try again.');
+      }
+    } catch (error) {
+      console.error('Error subscribing:', error);
+      alert('An error occurred. Please try again.');
+    } finally {
+      setIsLoading(false);
+    }
 
     setTimeout(() => {
       setIsSubmitted(false);
