@@ -33,15 +33,11 @@ Make sure you have Node.js and npm installed on your system.
 
 ### 3. Frontend Setup
 
-1.  Navigate to the `client` directory:
-    ```bash
-    cd client
-    ```
-2.  Install the client dependencies:
+1.  Install the frontend dependencies (from the root directory):
     ```bash
     npm install
     ```
-3.  Start the frontend development server:
+2.  Start the frontend development server (from the root directory):
     ```bash
     npm run dev
     ```
@@ -49,4 +45,4 @@ Make sure you have Node.js and npm installed on your system.
 
 ### 4. Vercel Deployment
 
-The `vercel.json` file in the root directory is used for deploying the project to Vercel. It configures the serverless function for the backend. This file is not directly used for local development.
+The `vercel.json` file in the root directory is used for deploying the project to Vercel. It configures both the frontend (now in the root) and the serverless function for the backend. This file is not directly used for local development.
