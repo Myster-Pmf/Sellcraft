@@ -9,14 +9,18 @@ import {
   Image as ImageIcon
 } from 'lucide-react';
 
+import tshirt from '../assets/tshirt.jpg';
+import jeans from '../assets/jeans.jpeg';
+import shoes from '../assets/shoes.jpeg';
+
 const Demo = () => {
   const [activeTab, setActiveTab] = useState('desktop');
   const [selectedProduct, setSelectedProduct] = useState(0);
 
   const products = [
-    { name: 'Premium T-Shirt', price: '৳850', image: '/src/assets/tshirt.jpg' },
-    { name: 'Casual Jeans', price: '৳1,200', image: '/src/assets/jeans.jpeg' },
-    { name: 'Sports Shoes', price: '৳2,500', image: '/src/assets/shoes.jpeg' }
+    { name: 'Premium T-Shirt', price: '৳850', image: tshirt },
+    { name: 'Casual Jeans', price: '৳1,200', image: jeans },
+    { name: 'Sports Shoes', price: '৳2,500', image: shoes }
   ];
 
   return (

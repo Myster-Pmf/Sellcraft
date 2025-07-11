@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowRight, Play, Store } from 'lucide-react';
+import bangladeshLow from '../assets/bangladeshLow.svg';
 
 const Hero = () => {
   return (
@@ -12,7 +13,7 @@ const Hero = () => {
 
       <div className="absolute inset-0 opacity-5">
         <img 
-          src="/src/assets/bangladeshLow.svg" 
+          src={bangladeshLow} 
           alt="Bangladesh Map" 
           className="w-full h-full object-contain transform scale-150 animate-pulse"
         />

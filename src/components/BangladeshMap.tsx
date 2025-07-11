@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { MapPin } from 'lucide-react';
+import bangladeshLow from '../assets/bangladeshLow.svg';
 
 const BangladeshMap = () => {
   
@@ -29,7 +30,7 @@ const BangladeshMap = () => {
             <div className="relative w-full h-96 md:h-[500px] mx-auto">
               <div className="absolute inset-0 flex items-center justify-center">
                 <img 
-                  src="/src/assets/bangladeshLow.svg" 
+                  src={bangladeshLow} 
                   alt="Bangladesh Map" 
                   className="w-full h-full object-contain opacity-20 filter brightness-200"
                 />
