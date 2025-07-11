@@ -154,10 +154,8 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center mb-4 md:mb-0">
               <span className="text-gray-400">
-                © 2024 SellCraft. All rights reserved. Built with 
+                © 2025 SellCraft. All rights reserved. Developed by <a href="https://mysterpmf.me" target="_blank" rel="noopener noreferrer" className="text-indigo-400 hover:text-indigo-300">PMF</a>.
               </span>
-              <Heart className="w-4 h-4 text-red-500 mx-2 fill-current" />
-              <span className="text-gray-400">by PMF</span>
             </div>
 
             <div className="flex space-x-4">

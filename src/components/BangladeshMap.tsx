@@ -49,7 +49,7 @@ const BangladeshMap = () => {
                 <div className="text-gray-300">Districts</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-purple-400 mb-2">500+</div>
+                <div className="text-3xl font-bold text-purple-400 mb-2">495</div>
                 <div className="text-gray-300">Upazilas</div>
               </div>
               <div className="text-center">
